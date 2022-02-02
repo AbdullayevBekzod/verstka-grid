@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+    <img src="assets/gentleman-3.jpg" class="bg-image"/>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <div class="logo-item">
+                    <img src="https://img.icons8.com/material/24/ffffff/menu--v1.png" class="logo-ham"/>
+                </div>
+            </div>
+            <div class="socials">
+               <p class="social-item social-tw">Tw</p>
+               <p class="social-item social-fb">Fb</p>
+               <p class="social-item social-in">In</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <nav class="navbar">
+            <div class="grid">
+                <div class="nav-grid-col-1">
+                    <h2 class="aer">Aer</h2>
+                </div>
+                <div class="nav-grid-col-2 navb">
+                    <ul class="nav-main">
+                        <li><a class="nav-a" href="#">Home</a></li>
+                        <li><a class="nav-a" href="#">Products</a></li>
+                        <li><a class="nav-a" href="#">About</a></li>
+                        <li><a class="nav-a" href="#">Locations</a></li>
+                        <li><a class="nav-a" href="#">Cart</a></li>
+                        <li><a class="nav-a" href="#">Search</a></li>
+                        </ul>
+                        <button onclick="showMenu()" class="logo-item1">
+                            <img src="https://img.icons8.com/material/24/ffffff/menu--v1.png" class="logo-ham"/>
+                        </button>
+                    <div class="ham-nav" id="linksNav">
+                        
+                        <ul class="linksNav" >
+                                <li class="navb-li"><a class="navb-a" href="#">Home</a></li>
+                                <li class="navb-li"><a class="navb-a" href="#">Products</a></li>
+                                <li class="navb-li"><a class="navb-a" href="#">About</a></li>
+                                <li class="navb-li"><a class="navb-a" href="#">Locations</a></li>
+                                <li class="navb-li"><a class="navb-a" href="#">Cart</a></li>
+                                <li class="navb-li"><a class="navb-a" href="#">Search</a></li>
+                            </ul>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+            <div class="content-grid">
+                <div class="content-grid-col-1">
+                     <h1>Work Anywhere</h1>
+                    <p>Introducing the Work Collection, a line of minimalist bags designed for a <a href="#">new generation specifically for the modern professional</a></p>
+                </div>
+                <div class="content-grid-col-2">
+                   
+                </div>
+            </div>
+            <div class="events">
+                <div class="events-grid">
+                    <div class="events-grid-col-1">
+                        <div class="col-1-1">
+                            <p class="events-col-1-p-1">Events</p>
+                            <p class="events-col-1-p-2">Pop-up @Stevan Alan Fillmore</p>
+                            <p class="events-col-1-p-3">SF-Sat, August 12 /5-8PM </p>
+                        </div>
+                        <div class="col-1-2">
+                            <p class="events-col-12-p-2">Pop-up @Stevan Alan Brooklyn</p>
+                            <p class="events-col-12-p-3">NYC-Sat, August 12 /5-8PM </p>
+                        </div>
+                    </div>
+                    <div class="events-grid-col-2">
+                        <div class="col-2-1">
+                            <img src="./assets/traveler.jpeg" alt="" class="image">
+                        </div>
+                        <div class="col-2-2">
+                            <p class="events-col-22-p-1">News</p>
+                            <p class="events-col-22-p-2">A fresh take on our Activity Collection, just in time for spring. Avialable in black</p>
+                            <p class="events-col-22-p-3">Read More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const showMenu=()=>{
+        let e = document.getElementById('linksNav');
+        if(e.style.display === "block"){
+            e.style.display = "none";
+        } else{
+            e.style.display = "block";
+        }
+    }
+</script>
+</html>
